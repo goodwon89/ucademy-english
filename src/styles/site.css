@@ -1,0 +1,140 @@
+/* Brand colors and editorial proportions follow the user's approved visual system. */
+:root{color-scheme:light;--ink:#20231f;--green:#50c323;--green-dark:#285c20;--hero:#cbedb1;--paper:#fff;--muted:#65705f;--line:#e3e8df}
+html{scroll-behavior:smooth;scroll-padding-top:120px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink)}
+*,*::before,*::after{box-sizing:border-box}
+a{color:inherit;text-decoration:none}
+button,a,summary{-webkit-tap-highlight-color:transparent}
+button,summary{cursor:pointer}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--green-dark);outline-offset:5px;border-radius:3px}
+img{max-width:100%;height:auto}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip-link{position:fixed;top:8px;left:16px;z-index:50;padding:12px 20px;background:#20231f;color:#fff;transform:translateY(-150%)}
+.skip-link:focus{transform:translateY(0)}
+#ucademy-site .uc-product{--uc-section-space:100px;--uc-character-size:390px;font-size:17px;line-height:1.75;font-family:'Pretendard Variable',Pretendard,'Malgun Gothic',sans-serif}
+#ucademy-site .uc-product h1,#ucademy-site .uc-product h2,#ucademy-site .uc-product h3{text-wrap:balance;word-break:keep-all}
+#ucademy-site .uc-product h1{font-size:clamp(44px,5vw,76px);line-height:1.15;font-weight:850;letter-spacing:-.055em}
+#ucademy-site .uc-product h2{font-size:clamp(30px,3.2vw,44px);line-height:1.3;font-weight:750}
+#ucademy-site .uc-product p{text-wrap:pretty}
+.site-header{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px solid #20231f0d}
+.page-home .site-header{background:var(--hero)}
+.header-inner{max-width:1536px;margin:0 auto;padding:0 36px;min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.site-brand{display:flex;align-items:center;gap:12px;flex-shrink:0;color:#20231f}
+.site-brand>img{width:38px;height:40px;object-fit:contain;mix-blend-mode:multiply}
+.site-brand>span{font-size:23px;line-height:1.12;font-weight:850}
+.site-brand small{display:block;font-size:9px;font-weight:650;letter-spacing:.12em;margin-top:7px}
+.site-nav{display:flex;align-items:center;gap:24px;white-space:nowrap;min-width:0}
+.site-nav a{font-size:15px;font-weight:650;padding:30px 0 26px;border-bottom:3px solid transparent;color:#343b30}
+.site-nav a:hover,.site-nav a[aria-current]{color:#285c20;border-bottom-color:#285c20}
+.header-contact{border:1px solid #20231f66;border-radius:8px;padding:10px 15px;font-size:13px;white-space:nowrap;font-weight:650}
+.header-contact span{margin-left:12px}
+#ucademy-site .uc-hero{padding:80px max(6%,calc((100% - 1200px)/2)) 90px;background:var(--hero);min-height:670px;grid-template-columns:1.3fr 1fr;gap:24px}
+#ucademy-site .uc-eyebrow{font-size:13px;font-weight:650;letter-spacing:.07em;margin-bottom:30px!important}
+#ucademy-site .uc-lead{font-size:19px;margin-top:30px!important;line-height:1.7}
+#ucademy-site .uc-actions{margin-top:34px;gap:22px}
+#ucademy-site .uc-button{padding:17px 23px;min-height:52px;font-size:15px!important;display:inline-flex;gap:16px;align-items:center;justify-content:center;text-decoration:none;transition:transform .16s ease-out}
+#ucademy-site .uc-button:hover{transform:translateY(-2px)}
+#ucademy-site .uc-dark{background:#20231f;color:#fff}
+#ucademy-site .uc-text-link{display:inline-block;text-decoration:none;font-size:15px!important;margin-top:14px;line-height:1.7}
+#ucademy-site .uc-text-link:hover{text-decoration:underline;text-underline-offset:5px}
+#ucademy-site .uc-hero-art{position:relative;aspect-ratio:1;max-width:500px;min-height:0;padding:15px;margin:0}
+#ucademy-site .uc-hero-art::before{inset:0;border-radius:48% 52% 53% 47%;background:#fff9;border:1px solid #42783024;transform:rotate(-9deg)}
+#ucademy-site .uc-hero-art::after{top:auto;left:5%;bottom:12%;width:14px;height:14px;background:#ff7475}
+#ucademy-site .uc-hero-art .uc-pose{width:min(100%,390px)}
+.hero-note{position:absolute;right:0;top:3%;padding:12px 22px;border-radius:30px;border:1px solid #20231f;background:white;font-size:14px;font-weight:700;transform:rotate(8deg);z-index:2}
+.hero-caption{position:absolute;left:8%;bottom:0;background:#20231f;color:white;padding:12px 20px;border-radius:30px;font-size:14px;font-weight:650;transform:rotate(-8deg);z-index:2}
+.hero-mobile-break{display:none}
+#ucademy-site .uc-section{max-width:1200px;margin:0 auto;padding:100px 32px}
+#ucademy-site .uc-philosophy{padding-top:130px;padding-bottom:110px;grid-template-columns:.8fr 1.2fr}
+#ucademy-site .uc-intro-side .uc-pose{width:130px}
+#ucademy-site .uc-kicker{font-size:13px;color:#50773e;margin-bottom:20px;letter-spacing:.03em}
+#ucademy-site .uc-section p{color:#586252;line-height:1.85;font-size:17px}
+#ucademy-site .uc-levels{padding-top:40px}
+#ucademy-site .uc-title-row{margin-bottom:44px;align-items:center}
+#ucademy-site .uc-title-row .uc-pose{width:135px}
+#ucademy-site .uc-level-grid{gap:20px}
+#ucademy-site .uc-level-card{display:block;min-height:280px;padding:32px 30px;background:#f2f5ef;transition:background-color .15s ease-out}
+#ucademy-site .uc-level-card:nth-child(2){background:#edf8f9}
+#ucademy-site .uc-level-card:nth-child(3){background:#fff0eb}
+#ucademy-site .uc-level-card:hover{background:#e2f3d7}
+#ucademy-site .uc-level-card h3{font-size:32px;margin-top:16px}
+#ucademy-site .uc-level-card p{font-size:16px}
+#ucademy-site .uc-number{font-size:13px;letter-spacing:.03em}
+#ucademy-site .uc-card-link{font-size:14px;margin-top:26px}
+#ucademy-site .uc-learning{max-width:none;padding:90px max(32px,calc((100% - 1136px)/2));background:#f4f8ef}
+#ucademy-site .uc-steps{margin-top:44px;font-size:16px;gap:30px}
+#ucademy-site .uc-steps li{padding-top:20px}
+#ucademy-site .uc-steps span{margin-bottom:15px}
+#ucademy-site .uc-teacher{padding-top:110px;padding-bottom:45px}
+#ucademy-site .uc-stories{padding-top:70px}
+#ucademy-site .uc-story-grid{gap:24px;margin-top:40px}
+.story-cover{height:220px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:#e4f2d7}
+.cover-cyan{background:#dff4f6}.cover-coral{background:#ffe5dc}
+.story-cover>span{position:absolute;left:20px;top:16px;font-size:10px;letter-spacing:.1em;color:#4b5c40;font-weight:650}
+.story-cover img{width:180px;height:180px;object-fit:cover;transform:translateY(12px)}
+#ucademy-site .uc-story-grid h3{font-size:19px;margin-top:21px}
+#ucademy-site .uc-story-grid p{font-size:13px;margin-top:8px}
+#ucademy-site .uc-secondary{max-width:1136px;margin:auto;padding:28px 0;align-items:center;font-size:18px}
+#ucademy-site .uc-contact-band{padding:70px max(32px,calc((100% - 1136px)/2));gap:40px;background:#232820}
+#ucademy-site .uc-contact-band h2{font-size:clamp(29px,3vw,42px)}
+#ucademy-site .uc-contact-band .uc-pose{width:220px}
+#ucademy-site .uc-contact-band .uc-button{margin-top:32px}
+.site-footer{background:#f1f3ef;padding:48px max(32px,calc((100% - 1136px)/2));font-size:14px;color:#656c60}
+.footer-top{display:flex;justify-content:space-between;align-items:center;gap:24px}
+.back-top{font-size:13px}.back-top span{margin-left:12px}
+.site-footer nav{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:36px;font-size:13px}
+.site-footer a:hover{text-decoration:underline;text-underline-offset:4px}
+.footer-bottom{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;border-top:1px solid #dbe1d6;margin-top:30px;padding-top:26px;font-size:12px}
+.footer-bottom p{margin:5px 0;line-height:1.7}
+#ucademy-site .uc-page-intro{padding:100px 32px 90px;background:white;text-align:center;max-width:1200px;margin:0 auto}
+#ucademy-site .uc-page-intro h1{font-size:clamp(42px,4vw,62px)}
+#ucademy-site .uc-page-intro p{font-size:19px;color:#65705f;line-height:1.75;margin-top:30px;max-width:700px}
+#ucademy-site .uc-page-intro:not(.uc-contact-intro):not(.uc-teacher-intro) p{margin-left:auto;margin-right:auto}
+#ucademy-site .uc-teacher-intro,#ucademy-site .uc-contact-intro{text-align:left;border-bottom:1px solid var(--line)}
+#ucademy-site .uc-contact-intro .uc-pose{width:240px}
+#ucademy-site .uc-teacher-name{padding-left:30px;min-width:220px;border-left-color:#50c323}
+#ucademy-site .uc-teacher-name strong{font-size:44px}
+#ucademy-site .uc-editorial{gap:70px;grid-template-columns:.9fr 1.6fr}
+#ucademy-site .uc-profile-list>div{padding:22px 0;grid-template-columns:95px 1fr}
+#ucademy-site .uc-profile-list dd{font-size:17px}
+#ucademy-site .uc-small{font-size:13px!important;line-height:1.75}
+#ucademy-site .uc-value-grid{gap:40px;margin-top:48px}
+#ucademy-site .uc-value-grid h3{font-size:22px}
+#ucademy-site .uc-value-grid p{font-size:16px}
+#ucademy-site .uc-review-list article{padding:32px 0}
+#ucademy-site .uc-source-link{font-size:14px;text-decoration:underline}
+#ucademy-site .uc-news-list article{padding:42px 0;gap:60px;grid-template-columns:170px 1fr}
+#ucademy-site .uc-news-list h2{font-size:30px}
+#ucademy-site .uc-news-list time{font-size:13px}
+#ucademy-site .uc-tabs{gap:12px;border:0;margin-bottom:34px}
+#ucademy-site .uc-tabs button{background:#f2f5ef;color:#53614a;border:0;border-radius:8px;padding:18px 20px;font-size:18px;min-height:56px}
+#ucademy-site .uc-tabs [aria-pressed="true"]{background:#25321f;color:#fff}
+#ucademy-site .uc-book-row{padding:28px 0;grid-template-columns:190px 1fr}
+#ucademy-site .uc-book-row h3{font-size:17px}
+#ucademy-site .uc-book-row p{font-size:17px;margin:0}
+#ucademy-site .uc-expression{max-width:none;background:#e7f6f7;padding:64px max(32px,calc((100% - 1136px)/2))}
+#ucademy-site .uc-expression .uc-pose{width:190px}
+#ucademy-site .uc-faq details{padding:24px 0}
+#ucademy-site .uc-faq summary{font-size:18px}
+#ucademy-site .uc-contact-options{grid-template-columns:.8fr 1.5fr}
+#ucademy-site .uc-prepare{background:#f4f8ef;max-width:none;padding:80px max(32px,calc((100% - 1136px)/2))}
+.location-link{display:flex;align-items:center;gap:24px;padding:32px;margin-top:30px;background:#f0f6e9;border:1px solid #d5e6c8}
+.location-icon{font-size:38px}.location-link strong{display:block;font-size:20px;color:#253b20}.location-link small{display:block;font-size:14px;margin-top:6px;color:#626d5a}
+.error-page{min-height:60vh}.error-page .uc-button{margin-top:32px}
+@media(min-width:1101px){#ucademy-site .uc-hero h1{white-space:nowrap}}
+@media(max-width:1100px){
+ .header-inner{padding:16px 24px 0;flex-wrap:wrap;gap:12px;min-height:0}.site-brand>span{font-size:21px}.header-contact{margin-left:auto;padding:8px 12px}.site-nav{order:3;width:100%;justify-content:flex-start;overflow-x:auto;gap:24px;scrollbar-width:thin;scrollbar-color:#6b86554d transparent}.site-nav a{font-size:14px;padding:12px 0 14px}.site-header{border-bottom-color:#20231f1a}
+ #ucademy-site .uc-hero{padding:60px 32px 70px;min-height:0;gap:30px;grid-template-columns:1.2fr 1fr}#ucademy-site .uc-hero h1{font-size:52px}.hero-mobile-break{display:block}#ucademy-site .uc-hero-art{max-width:400px}.hero-caption,.hero-note{font-size:12px;padding:10px 16px}#ucademy-site .uc-section{padding:80px 32px}#ucademy-site .uc-secondary{margin:0 32px}
+}
+@media(max-width:760px){
+ html{scroll-padding-top:176px}.header-inner{padding:13px 20px 0}.site-brand{gap:10px}.site-brand>img{width:30px;height:32px}.site-brand>span{font-size:20px}.site-brand small{font-size:8px;margin-top:5px}.header-contact{font-size:12px}.header-contact span{margin-left:8px}.site-nav{gap:0 17px;flex-wrap:wrap;overflow:visible;white-space:nowrap}.site-nav a{font-size:13px;padding:10px 0 9px}
+ #ucademy-site .uc-product{font-size:16px}#ucademy-site .uc-product h2{font-size:30px}#ucademy-site .uc-hero{grid-template-columns:minmax(0,1fr);padding:50px 24px 44px;gap:35px}#ucademy-site .uc-hero>div{min-width:0;max-width:100%}#ucademy-site .uc-hero h1{font-size:clamp(35px,9.1vw,52px);line-height:1.23}#ucademy-site .uc-eyebrow{font-size:10px;margin-bottom:22px!important;letter-spacing:.035em}#ucademy-site .uc-lead{font-size:16px;margin-top:22px!important}#ucademy-site .uc-actions{gap:8px;align-items:stretch;margin-top:25px;flex-direction:column}#ucademy-site .uc-actions .uc-button{width:100%}#ucademy-site .uc-hero-art{width:min(290px,100%);max-width:100%;justify-self:center;margin-top:6px}#ucademy-site .uc-hero-art .uc-pose{width:min(260px,100%)}.hero-caption{bottom:0;left:3%;font-size:11px;padding:10px 15px}.hero-note{font-size:11px;right:0;top:0}
+ #ucademy-site .uc-section{padding:64px 24px}#ucademy-site .uc-section p{font-size:16px}#ucademy-site .uc-philosophy,#ucademy-site .uc-teacher,#ucademy-site .uc-editorial,#ucademy-site .uc-contact-options{grid-template-columns:1fr;gap:24px}#ucademy-site .uc-philosophy{padding-top:76px}#ucademy-site .uc-intro-side{display:flex;align-items:center;gap:14px}#ucademy-site .uc-intro-side .uc-pose{width:74px;margin:0}#ucademy-site .uc-intro-side .uc-kicker{margin:0}#ucademy-site .uc-levels{padding-top:20px}#ucademy-site .uc-title-row{gap:10px;margin-bottom:28px}#ucademy-site .uc-title-row .uc-pose{width:75px}#ucademy-site .uc-title-row h2{font-size:27px}
+ #ucademy-site .uc-level-grid{grid-template-columns:1fr;gap:14px}#ucademy-site .uc-level-card{min-height:0;padding:27px 25px}#ucademy-site .uc-level-card h3{font-size:29px;margin-top:8px}#ucademy-site .uc-level-card p{font-size:16px;margin-top:10px}#ucademy-site .uc-level-card br{display:none}#ucademy-site .uc-card-link{margin-top:18px}
+ #ucademy-site .uc-learning{padding:64px 24px}#ucademy-site .uc-steps{grid-template-columns:1fr 1fr;gap:30px 20px;margin-top:30px;font-size:15px}#ucademy-site .uc-story-grid{grid-template-columns:1fr;gap:34px}.story-cover{height:210px}.story-cover img{width:190px;height:190px}#ucademy-site .uc-secondary{margin:0 24px;gap:8px;display:block;font-size:17px}#ucademy-site .uc-secondary .uc-text-link{display:block}
+ #ucademy-site .uc-contact-band{padding:50px 24px;flex-wrap:wrap;gap:24px}#ucademy-site .uc-contact-band h2{font-size:29px}#ucademy-site .uc-contact-band .uc-pose{width:150px;margin-left:auto}#ucademy-site .uc-contact-band .uc-button{margin-top:24px}.site-footer{padding:38px 24px}.site-footer .site-brand>span{font-size:19px}.site-footer nav{gap:12px 18px;font-size:12px;margin-top:28px}.footer-bottom{display:block;font-size:11px}.footer-bottom>p{margin-top:24px}.back-top{font-size:12px}
+ #ucademy-site .uc-page-intro{padding:65px 24px 54px}#ucademy-site .uc-page-intro h1{font-size:36px;line-height:1.27}#ucademy-site .uc-page-intro p{font-size:16px;margin-top:24px}#ucademy-site .uc-teacher-intro,#ucademy-site .uc-contact-intro{flex-wrap:wrap;gap:30px}#ucademy-site .uc-contact-intro .uc-pose{width:170px;margin-left:auto}#ucademy-site .uc-teacher-name{min-width:0;padding:10px 0 10px 20px}#ucademy-site .uc-teacher-name strong{font-size:35px}
+ #ucademy-site .uc-profile-list>div{grid-template-columns:1fr;gap:6px;padding:18px 0}#ucademy-site .uc-profile-list dd{font-size:16px}#ucademy-site .uc-value-grid{grid-template-columns:1fr;gap:28px;margin-top:30px}#ucademy-site .uc-value-grid h3{font-size:21px}#ucademy-site .uc-history li{grid-template-columns:1fr;gap:8px}#ucademy-site .uc-news-list article{grid-template-columns:1fr;gap:18px;padding:32px 0}#ucademy-site .uc-news-list h2{font-size:25px}#ucademy-site .uc-news-list .uc-kicker{display:inline;margin-right:15px}
+ #ucademy-site .uc-tabs{gap:8px;margin-bottom:20px}#ucademy-site .uc-tabs button{padding:15px 10px;font-size:16px}#ucademy-site .uc-book-row{grid-template-columns:1fr;gap:10px;padding:24px 0}#ucademy-site .uc-book-row p{font-size:16px}#ucademy-site .uc-expression{padding:44px 24px;flex-wrap:wrap}#ucademy-site .uc-expression .uc-pose{width:120px;margin-left:auto}#ucademy-site .uc-expression h2{font-size:29px}#ucademy-site .uc-faq summary{font-size:16px}#ucademy-site .uc-prepare{padding:55px 24px}.location-link{padding:25px 18px;gap:14px}.location-link strong{font-size:17px}.location-link small{font-size:12px}.location-icon{font-size:30px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}#ucademy-site .uc-button{transition:none}#ucademy-site .uc-button:hover{transform:none}}
