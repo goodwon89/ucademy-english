@@ -1,7 +1,7 @@
 import {readFile,readdir,stat} from 'node:fs/promises';
 import path from 'node:path';
 const dir=path.resolve('dist');
-const routes=['','teacher','about','elementary','secondary','stories','contact'];
+const routes=['','teacher','about','elementary','secondary','contact'];
 const expected=routes.map(r=>r?`/${r}/`:'/');
 const issues=[];
 for(const route of routes){
@@ -14,10 +14,18 @@ for(const route of routes){
  const links=[...nav.matchAll(/href="([^"]+)"/g)].map(m=>m[1]);if(JSON.stringify(links)!==JSON.stringify(expected))issues.push(`${route}: incorrect navigation order`);
  const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);if(ids.length!==new Set(ids).size)issues.push(`${route}: duplicate ids`);
  for(const m of html.matchAll(/(?:src|href)="(\/[^"#]*)(?:#[^"]*)?"/g)){
-  let target=path.join(dir,decodeURIComponent(m[1]));try{if((await stat(target)).isDirectory())target=path.join(target,'index.html');await stat(target);}catch{issues.push(`${route}: missing internal resource ${m[1]}`);}
+  let target=path.join(dir,decodeURIComponent(m[1].split('?')[0]));try{if((await stat(target)).isDirectory())target=path.join(target,'index.html');await stat(target);}catch{issues.push(`${route}: missing internal resource ${m[1]}`);}
  }
  const external=[...html.matchAll(/<a\b[^>]*target="_blank"[^>]*>/g)].map(m=>m[0]);for(const link of external)if(!link.includes('noopener'))issues.push(`${route}: external link missing noopener`);
 }
 for(const item of ['404.html','sitemap.xml','robots.txt','assets/social-cover.png','assets/favicon.png','assets/apple-touch-icon.png'])try{await stat(path.join(dir,item));}catch{issues.push(`Missing ${item}`);}
 for(const folder of ['.env','.git','.codex','outputs','references'])try{await stat(path.join(dir,folder));issues.push(`Unexpected private folder ${folder}`);}catch{}
-if(issues.length){console.error(issues.join('\n'));process.exitCode=1;}else console.log('PASS: 7 real routes, navigation order, metadata, resource links, no tuition and no prototype placeholders.');
+
+const teacher=await readFile(path.join(dir,'teacher/index.html'),'utf8');
+if((teacher.match(/class="parent-review-card"/g)||[]).length!==5)issues.push('Expected five parent review summaries');
+if(!teacher.includes('past-student-reviews'))issues.push('Past student reviews must stay separate');
+const about=await readFile(path.join(dir,'about/index.html'),'utf8');
+if(!about.includes('id="news"')||(about.match(/class="uc-source-link"/g)||[]).length<7)issues.push('Merged academy news missing');
+for(const route of routes){const html=await readFile(path.join(dir,route,'index.html'),'utf8');const count=(html.match(/src="\/assets\/yukamon-/g)||[]).length;if(count!==(route===''?2:0))issues.push(`${route}: unexpected mascot repetition ${count}`);}
+
+if(issues.length){console.error(issues.join('\n'));process.exitCode=1;}else console.log('PASS: 6 real routes, navigation order, metadata, resource links, no tuition and no prototype placeholders.');
