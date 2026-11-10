@@ -138,3 +138,30 @@ img{max-width:100%;height:auto}
  #ucademy-site .uc-tabs{gap:8px;margin-bottom:20px}#ucademy-site .uc-tabs button{padding:15px 10px;font-size:16px}#ucademy-site .uc-book-row{grid-template-columns:1fr;gap:10px;padding:24px 0}#ucademy-site .uc-book-row p{font-size:16px}#ucademy-site .uc-expression{padding:44px 24px;flex-wrap:wrap}#ucademy-site .uc-expression .uc-pose{width:120px;margin-left:auto}#ucademy-site .uc-expression h2{font-size:29px}#ucademy-site .uc-faq summary{font-size:16px}#ucademy-site .uc-prepare{padding:55px 24px}.location-link{padding:25px 18px;gap:14px}.location-link strong{font-size:17px}.location-link small{font-size:12px}.location-icon{font-size:30px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}#ucademy-site .uc-button{transition:none}#ucademy-site .uc-button:hover{transform:none}}
+
+/* A quieter academy overview and source-linked parent experiences. */
+.about-jump{max-width:1136px;margin:0 auto;padding:22px 0;display:flex;flex-wrap:wrap;gap:12px 32px;border-bottom:1px solid var(--line);font-size:14px;font-weight:650}
+.about-jump a{padding:8px 0}.about-jump a:hover{color:var(--green-dark);text-decoration:underline;text-underline-offset:6px}
+#ucademy-site .story-type{background:#f1f4ed;justify-content:flex-start;padding:38px 26px;align-items:center}
+#ucademy-site .story-type>strong{font-size:28px;font-weight:750;line-height:1.35;max-width:180px;word-break:keep-all}
+#ucademy-site .story-type>.story-arrow{top:auto;left:auto;right:24px;bottom:20px;font-size:28px;letter-spacing:0}
+#ucademy-site .uc-story-grid article:nth-child(2) .story-type{background:#e7eee1}
+#ucademy-site .uc-story-grid article:nth-child(3) .story-type{background:#f5f1e9}
+#ucademy-site .news-heading{padding-bottom:28px}#ucademy-site .news-heading h2{font-size:clamp(30px,3.2vw,44px)}
+#ucademy-site .uc-news-list article h3{font-size:27px;line-height:1.4}
+#ucademy-site .classroom-section{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+#ucademy-site .parent-reviews{max-width:none;padding:90px max(32px,calc((100% - 1136px)/2));background:#f5f7f1}
+#ucademy-site .review-heading{margin-bottom:40px}#ucademy-site .review-heading>p{margin-top:22px}
+.parent-review-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+#ucademy-site .parent-review-card{background:#fff;border:1px solid #dfe5d7;border-top:3px solid #7ba55c;padding:30px 26px;display:flex;flex-direction:column;min-width:0}
+#ucademy-site .parent-review-card h3{font-size:23px;line-height:1.45;margin:0 0 18px;min-height:3em}
+#ucademy-site .parent-review-card p{font-size:16px;margin:0 0 28px;flex:1}
+#ucademy-site .parent-review-card footer{display:flex;flex-wrap:wrap;gap:3px 12px;color:#69715f;font-size:12px;line-height:1.8;border-top:1px solid var(--line);padding-top:18px;margin-bottom:14px}
+#ucademy-site .parent-review-card .uc-source-link{font-size:13px;align-self:flex-start}
+.more-parent-reviews{border-top:1px solid #d7dfcd;margin-top:28px;padding-top:8px}
+.more-parent-reviews summary{padding:20px 0;font-size:15px;font-weight:650}
+.more-parent-reviews .parent-review-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:28px}
+#ucademy-site .review-source-note{margin-top:28px;max-width:850px}
+#ucademy-site .past-student-reviews{padding-top:90px}
+@media(max-width:1100px){.about-jump{margin:0 32px}}
+@media(max-width:760px){.about-jump{margin:0 24px;padding:16px 0;gap:6px 22px;font-size:13px}.parent-review-grid,.more-parent-reviews .parent-review-grid{grid-template-columns:minmax(0,1fr)}#ucademy-site .parent-reviews{padding:64px 24px}#ucademy-site .parent-review-card{padding:26px 22px}#ucademy-site .parent-review-card h3{font-size:22px;min-height:0}#ucademy-site .uc-news-list article h3{font-size:24px}#ucademy-site .uc-contact-band .uc-pose{width:110px}}
