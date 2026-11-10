@@ -42,12 +42,12 @@
   ],
   "redirects": [
     {
-      "source": "/stories",
+      "source": "/stories/",
       "destination": "/about/#news",
       "permanent": true
     },
     {
-      "source": "/stories/:path*",
+      "source": "/stories/:path*/",
       "destination": "/about/#news",
       "permanent": true
     }
